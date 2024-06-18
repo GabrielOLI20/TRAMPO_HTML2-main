@@ -103,13 +103,13 @@ function calcularEFormatarValoresPlanosOperadoraA(idade, imc) {
 
 function verificarFatorComorbidade(imc) {
   switch (true) {
-    case imc <= 18.5:
+    case imc <= 18.4:
       return 10;
     case imc >= 18.5 && imc <= 25:
       return 1;
-    case imc >= 24.99 && imc <= 29.9:
+    case imc >= 25 && imc <= 30:
       return 6;
-    case imc >= 30 && imc <= 34.9:
+    case imc >= 30 && imc <= 35:
       return 10;
     case imc >= 35 && imc <= 40:
       return 20;
